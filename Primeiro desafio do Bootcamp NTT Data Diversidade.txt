@@ -1,0 +1,33 @@
+GIT e GITHUB
+
+Primeiramente e necessário conceituar e compreender objetivo do Git e Github.
+O Github é um serviço baseado em nuvem para hospedar um sistema de controle de versão, que é o Git. No Github os desenvolvedores têm a chance de colaborarem e fazerem mudanças em projetos compartilhados, mantendo um registro detalhado do seu projeto. É a oportunidade que os devs iniciantes têm de demostrar seu progresso para empresas que desejam contratar esses profissionais.
+
+Alguns conceitos importantes:
+Repositório: são "pastas" do Git, utilizadas ara o armazenamento de projetos;
+Branch: é uma ramificação a partir de um fluxo principal
+Commit: são as alterações nas pastas dos projetos;
+Merge: é a junção de uma "branch" alternativa com uma "branch"principal;
+Push: é um comando utilizado para trazer os arquivos para um repositório remoto;
+Pull request: são contribuições feitos e projetos Opn Source.
+
+
+Passo a passo para criação, atualização e sincronização de um repositório o GitHub:
+
+1.Baixar o GIT através do link:https://git-scm.com/ e criar uma conta no Github através do link: https://github.com/;
+2.Criar uma pasta em sua máquina com o arquivo que deverá ser disponibilizado no Github;
+3.Na pasta criada, clicar com o botão direito do mouse e escolher a opção: "Git Bash Bere" e iniciar com os comandos  sequenciados a seguir:
+* git config --global user.name "nome do usuário" - para configuar o git e sincronizar com seu nome do Github;
+* git config --global user.email "email do usuário@exemplo.com" - para configuar o git e sincronizar com seu e-mail cadastrado no Github;
+* git list - para verificar se as configurações foram feitas;
+* git init - para iniciar um novo repositório;
+* git add . - este comando é para que os arquivos necessários vão para o stagging
+* git add nomeDoArquivo.txt - caso queira adicionar um único item;
+* git commit -m "mensagem que deseja que apareça no github" - para "commitar" o arquivo e entre aspas uma mensagem de alteração feita no arquivo;
+* git branch -m main - se deseja alterar a brach princiapl para main (caso esteja em master);
+* git remote add origin "link do github.com" - para passar os arquivos para o Github. Esse arquivo faz a comexão entre o repositório na máquina e o Github;
+* git push -u origin main - para "empurrar" o repositório para o Github;
+* git status - para visualizar o status do repositorio;
+* git rm nomeDoArquivo.txt - para exclusão de algum arquivo (se utilizar esse comando, deve-se repetir os comandos de commit e push).
+
+
